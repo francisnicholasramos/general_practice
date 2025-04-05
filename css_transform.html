@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+
+  <style>
+    body {
+      /*position: relative;*/
+      /*top: 50px;*/
+      /*perspective: 100px;*/
+      height: 100px;
+      margin: auto;
+      border: 1px solid red;
+    }
+
+    /*activate 3D space by including perspective() property*/
+    .box {
+      transform: translate(-20px, 40px); /* 1 or 2 parameters: moves x, y */
+      /*transform: skew(10deg, 20deg); 1 or 2 parameters: x, y*/
+      /* transform: scale(1); 2 parameters: x, y */
+      /* transform: rotate(10deg); 1 parameter: positive & negative values  */
+      /*transform: perspective(400px) rotate3d(100, 1, 3, 0deg); /* rotate3d(x, y, z, a) */
+      margin: auto;
+      border: 1px solid black;
+    }
+  </style>
+
+  <body>
+    <div style="display: flex; justify-content: center; gap: 10px;">
+    <div
+      style="
+        text-align: center;
+        background-color: red;
+        max-width: 100px;
+        min-height: 100px;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+      "
+    ></div>
+
+    <div
+      class="box"
+      style="
+        text-align: center;
+        background-color: blue;
+        max-width: 100px;
+        min-height: 100px;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+      "
+    >
+      <div>T</div>
+      <div style="display: flex; justify-content: space-between;:">
+        <p>L</p>
+        <p>R</p>
+      </div>
+      <div>B</div>
+    </div>
+
+    <div
+      style="
+        text-align: center;
+        background-color: orange;
+        max-width: 100px;
+        min-height: 100px;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+      "
+    ></div>
+
+    </div>
+  </body>
+</html>
