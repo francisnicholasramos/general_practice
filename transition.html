@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    div {
+      min-height: 100px;
+      max-width: 100px;
+      background-color: blue;
+
+      transition-property: background-color;
+      transition-duration: 0.8s;
+      transition-delay: 1s;
+    }
+
+    div:hover {
+      background-color: salmon;
+    }
+
+    a {
+      background-color: #333;
+      color: #fff;
+      transition: all 0.5s ease-out;
+    }
+
+    a:hover,
+    a:focus {
+      background-color: #fff;
+      color: #333;
+    }
+  </style>
+
+  <body>
+    <div></div>
+    <br />
+    <button>Click me!</button>
+    <br />
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Links</a>
+    </nav>
+  </body>
+</html>
+
+<!--transition-property: which property will be applied by animation -->
